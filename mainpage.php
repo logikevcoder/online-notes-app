@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 	<head>
-		<title>Online Notes</title>
+		<title>My Notes</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="initial-scale=1.0">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -24,22 +24,25 @@
 		</div>
 		<div class="navbar-collapse collapse" id="navCollapse">
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="#">Home</a></li>
+			
+				<li><a href="">Profile</a></li>
 				<li><a href="">Help</a></li>
 				<li><a href="">Contact</a></li>
+				<li class="active"><a href="">My Notes</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#loginModal" data-toggle="modal">Login</a></li>
+				<li><a href="#loginModal" data-toggle="modal">Logged in as <b>Username</b></a></li>
+				<li><a href="#">Logout</a></li>
 			</ul>
 		</div>
 	</div>
 </nav>
 	
-	<div class="Jumbotron">
-		<h1>Online Notes App</h1>
-		<p>Take your notes wherever you go.</p>
-		<p>Easy to use and secure</p>
-		<button class="btn btn-lg signup" data-target="#signupModal" data-toggle="modal">Sign up now</button>
+	<div class="container">
+	<div class="row">
+		<div class="col-md-offset-3 col-md-6"></div>
+	</div>
+	
 	</div>
 	
 	<!-- Signup Form -->
