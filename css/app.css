@@ -180,6 +180,10 @@ textarea {
 	padding: 10px;
 }
 
+tr {
+	cursor: pointer;
+}
+
 .buttons {
 	margin-bottom: 20px;
 }

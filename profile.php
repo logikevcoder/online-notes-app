@@ -27,10 +27,10 @@
 		<div class="navbar-collapse collapse" id="navCollapse">
 			<ul class="nav navbar-nav">
 			
-				<li><a href="">Profile</a></li>
+				<li class="active"><a href="">Profile</a></li>
 				<li><a href="">Help</a></li>
 				<li><a href="">Contact</a></li>
-				<li class="active"><a href="">My Notes</a></li>
+				<li><a href="mainpage.php">My Notes</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="#loginModal" data-toggle="modal">Logged in as <b>Username</b></a></li>
@@ -135,13 +135,21 @@
 						<button class="close" data-dismiss="modal">&times;</button>
 						<!-- modal title -->
 						<h4 id="myModalLabel">
-							Edit Password
+							Enter current and new Password
 						</h4>
 					</div> <!-- modal header -->
 					<div class="modal-body">
 						<div class="form-group">
-							<label for="password">Password:</label>
-							<input type="password" name="username" class="form-control" id="username" maxlength="30">
+							<label for="currentPassword" class="sr-only"></label>
+							<input type="password" name="currentPassword" class="form-control" id="currentPassword" maxlength="30" placeholder="Current password">
+						</div>
+						<div class="form-group">
+							<label for="password" class="sr-only">Choose a password: </label>
+							<input type="password" name="password" class="form-control" id="password" maxlength="30" placeholder="Choose a password">
+						</div>
+						<div class="form-group">
+							<label for="password2" class="sr-only">Confirm password: </label>
+							<input type="password" name="username2" class="form-control" id="password2" maxlength="30" placeholder="Confirm password">
 						</div>
 					</div> <!-- modal body -->
 					<div class="modal-footer">
