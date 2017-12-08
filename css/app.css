@@ -159,6 +159,10 @@ body {
 	margin-top: 120px;
 }
 
+#profileContainer {
+	margin-top: 100px;
+}
+
 #allNotes, 
 #done, 
 #notePad {
