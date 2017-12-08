@@ -46,15 +46,15 @@
 				<h2>Account Settings:</h2>	
 				<div class="table-responsive">
 					<table class="table table-hover table-condensed">
-						<tr>
+						<tr data-target="#updateUserName" data-toggle="modal">
 							<td>Username</td>
 							<td>value</td>
 						</tr>
-						<tr>
+						<tr data-target="#updateEmail" data-toggle="modal">
 							<td>Email</td>
 							<td>value</td>
 						</tr>
-						<tr>
+						<tr data-target="#updatePassword" data-toggle="modal">
 							<td>Password</td>
 							<td>hidden</td>
 						</tr>
@@ -64,41 +64,90 @@
 		</div> <!-- row -->
 	</div> <!-- container -->
 	
-	<!-- Signup Form -->
-	<form action="POST" id="signupform">
-		<div class="modal" id="signupModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true;">
+	<!-- Update Username -->
+	<form action="POST" id="updateUsernameForm">
+		<div class="modal" id="updateUserName" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true;">
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
 						<button class="close" data-dismiss="modal">&times;</button>
+						<!-- modal title -->
 						<h4 id="myModalLabel">
-							Signup today and start creating notes!
+							Edit Username
 						</h4>
 					</div> <!-- modal header -->
 					<div class="modal-body">
-						<!-- Signup message from php file -->
-						<div id="signupMessage">
-							
-						</div>
 						<div class="form-group">
-							<placeholder class="sr-only" for="username">Username: </placeholder>
-							<input type="text" name="username" placeholder="Username" class="form-control" id="username" maxlength="30">
-						</div>
-						<div class="form-group">
-							<placeholder class="sr-only" for="email">Email: </placeholder>
-							<input type="email" name="email" placeholder="Email Address" class="form-control" id="email" maxlength="30">
-						</div>
-						<div class="form-group">
-							<placeholder class="sr-only" for="password">Password: </placeholder>
-							<input type="password" name="password" placeholder="Choose a password" class="form-control" id="password" maxlength="30">
-						</div>
-						<div class="form-group">
-							<placeholder class="sr-only" for="password2">Password: </placeholder>
-							<input type="password" name="password2" placeholder="Confirm Password" class="form-control" id="password2" maxlength="30">
+							<label for="username">Username: </label>
+							<input type="text" name="username" class="form-control" id="username" maxlength="30" value="">
 						</div>
 					</div> <!-- modal body -->
 					<div class="modal-footer">
-						<input class="btn btn-success" name="signup" type="submit" value="Sign Up">
+						<!-- update button -->
+						<input class="btn btn-success" name="updateUsername" type="submit" value="Update">
+						<!-- cancel button -->
+						<button type="button" class="btn btn-default" data-dismiss="modal">
+							Cancel
+						</button>
+					</div> <!-- modal footer -->
+				</div> <!-- modal content -->
+			</div> <!-- modal dialogue -->
+		</div>
+	</form>
+	
+		<!-- Update Email -->
+	<form action="POST" id="updateEmailForm">
+		<div class="modal" id="updateEmail" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true;">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button class="close" data-dismiss="modal">&times;</button>
+						<!-- modal title -->
+						<h4 id="myModalLabel">
+							Edit Email
+						</h4>
+					</div> <!-- modal header -->
+					<div class="modal-body">
+						<div class="form-group">
+							<label for="email">Email:</label>
+							<input type="email" name="email" class="form-control" id="email" maxlength="30">
+						</div>
+					</div> <!-- modal body -->
+					<div class="modal-footer">
+						<!-- Update button -->
+						<input class="btn btn-success" name="update" type="submit" value="Update">
+						<!-- Cancel button -->
+						<button type="button" class="btn btn-default" data-dismiss="modal">
+							Cancel
+						</button>
+					</div> <!-- modal footer -->
+				</div> <!-- modal content -->
+			</div> <!-- modal dialogue -->
+		</div>
+	</form>
+	
+		<!-- Update Password -->
+	<form action="POST" id="updatePasswordForm">
+		<div class="modal" id="updatePassword" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true;">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button class="close" data-dismiss="modal">&times;</button>
+						<!-- modal title -->
+						<h4 id="myModalLabel">
+							Edit Password
+						</h4>
+					</div> <!-- modal header -->
+					<div class="modal-body">
+						<div class="form-group">
+							<label for="password">Password:</label>
+							<input type="password" name="username" class="form-control" id="username" maxlength="30">
+						</div>
+					</div> <!-- modal body -->
+					<div class="modal-footer">
+						<!-- Update button -->
+						<input class="btn btn-success" name="update" type="submit" value="Update">
+						<!-- Cancel button -->
 						<button type="button" class="btn btn-default" data-dismiss="modal">
 							Cancel
 						</button>
