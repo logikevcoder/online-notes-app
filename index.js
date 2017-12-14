@@ -8,7 +8,7 @@ $("#signupform").submit(function(e){
 		console.log(datatopost);
 		//send them to signup.php using AJAX
 		$.ajax({
-			url: "signu.php",
+			url: "signup.php",
 			type: "POST",
 			data: datatopost,
 			success: function(data){
